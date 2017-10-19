@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Tasks</h1>
+
+<%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-default' %>
+<br>
+
+<div id="task-form"></div>
+<br>
+
+<div id="tasks">
+  <%= render @user_tasks %>
+</div>
+
+<br>
+
